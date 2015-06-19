@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+	<head>
+		<!-- this is a comment - um um um - used to leave notes by developers. Metadata about the page goes here -->
+		<title>Andrea Cox</title>
+		<!-- this title text will go in the tab title-. This is really important text for Google as it contains info about what the page is about. Impt for SEO -->
+		<meta charset="utf-8">		<!-- you can also change the character encoding here, so windows-1252 for example or utf-8 -->
+		<link rel="stylesheet" href="css/style.css">
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<!-- the above link is for the font family we are going to use. But we ALSO need to tell computer which elements to use this for. We do this in CSS, see h1 -->
+	</head>
+	
+	<body>
+		<div class="twitter-timeline" 
+			width="300"
+			height="500"
+			data theme = "dark"
+			data-dnt="true" href="https://twitter.com/greenreveller" 
+			data-widget-id="601396082648731648">Tweets by @greenreveller</a>
+				
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		</div>
+
+
+		<div class="main">
+			<!-- div is for dividing up sections of a page. whereas span is for highlighting a piece of text. You can call div whatever you want -->
+		<h1>Andrea Cox</h1>
+		<h2>DIY Machine</h2>
+		<img src="images/me.jpg" alt="picture of Andrea Cox">
+		<!-- src stands for source code , alt is alternative text of the picture. NB don't hotlink! You don't know what the image might be replaced by John McCain story. Best to alter size of pic before linking to it (saves the server some work). But you can resize this picture in CSS if you need. Then you can compress it using ImageOptim -->
+
+		<h3>About Me</h3>
+		<div>
+		<p>Chambray meggings iPhone scenester. Health goth mixtape next level, DIY lumbersexual YOLO Austin. Craft beer ugh forage, lumbersexual master cleanse chillwave semiotics keffiyeh you probably haven't heard of them normcore chambray. Readymade food truck Kickstarter, lomo tote bag selvage mustache artisan tousled viral shabby chic synth health goth leggings.</p>
+		<p>Cronut meggings Blue Bottle hella. Vice sriracha Austin, tofu Wes Anderson cray pop-up kogi semiotics Etsy PBR&B. Pitchfork deep v polaroid next level, wolf pop-up gluten-free mumblecore bicycle rights food truck street art meggings photo booth.</p>
+		</div>
+		<!-- to get lorem text add para then type lorem and then tab once and you'll get a paragraph -->
+
+		<h3>Top Three Favourite Hardware Tools</h3>
+		<ol>
+			<li> Electric drill </li>
+			<li> Stanley Knife </li>
+			<li> Monkey Wrench </li>
+		</ol>
+				<!-- ol stands for ordered list. It automatically gives you a numbered list (but you can get rid of this in CSS if you don't want numbering). Ul gives you unordered list (with bullet points). Definition list (dl) gives you title and description -->
+
+		<h3>Me On the Web</h3>
+			<ul>
+				<li> 
+				<a href="http://twitter.com/greenreveller"> Twitter </a>
+				</li>
+				<!-- a stands for anchor, then href is link -->
+
+				<li>
+				<a href="https://www.facebook.com/andrea.cox.5648"> Facebook </a>
+				<!-- https has encryption in it, KSA encryption -->
+				<!-- if you want the link to open the link in a new tab/window/page when you click it you add target="_blank" after link -->
+
+				<li>	
+				<a href="https://www.linkedin.com/pub/andrea-cox/61/299/187"> LinkedIn </a>
+				</li>
+			</ul>
+
+				<div class="video">
+				<iframe width="560" height="315" data-theme="dark" data-tweet-limit="5" src="https://www.youtube.com/embed/m6CTRVuSxH8?rel=0"></iframe>
+				</div>
+
+			</div>
+
+			<script src="http://code.jquery.com/jquery.js"></script>
+			<script src="js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,99 @@
+body {
+	background-image: url(../images/bg2.jpg);
+	/* the two dots above show the file path. The first dot says 'get out of current file' and then the second dot
+	says 'go to the folder which I'm about to type' */
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: 0 50%;
+	font-family: Helvetica, Arial, sans-serif
+	/* check out list of web-safe fonts, see CSS Font Stack */
+}
+/* This is a CSS comment */
+/* font-family, specificy preferred order as you don't know which fonts someone has on their computer*/
+.main {
+	background-color: #ffffff;
+	background-color: rgba(255,255,255,0.7);
+	/* there are different ways of describing colour e.g. hexadecimal syntax #ffffff (not used 
+	that much but needed for IE7 etc.) */
+	width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+	/* used to separate content from the edge of the element. 
+	You can also do padding-top, padding-left. See CSS Box Model. You can use float to make rows/columns*/
+	border-radius: 20px;
+}
+/* using . gives you the class name which we specified in the html document */
+
+h1 {
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	margin-bottom: 10px;
+	font-size: 70px;
+	text-shadow: 0 0 10px green;
+}
+
+h2 {
+	text-align: center;
+	margin-top: 0;
+	text-transform: uppercase;
+	font-weight: normal;
+	letter-spacing: 5px;
+}
+
+h3{
+	margin-bottom: 0;
+	cursor: pointer;
+}
+h3:after {
+	content: ' +';
+}
+h3.open:after {
+	content: ' -';
+}
+
+img {
+	width:200px;
+	margin:0 auto;
+	/* auto margin means left and right margins, none above */
+	display: block;
+	/* good hack to use to make image go in centre of the page */
+	border-radius: 100%;
+	/* border radius rounds off corners of a square image if you use e.g. 30px. 
+	If you put to 100px then it will turn into circle. 
+	If you have rectangular image then you can use 50%
+	You can also change different corners*/
+	border: 40px dashed yellow;
+
+}
+
+
+p,
+ol,
+ul {
+	line-height: 1.4;
+	list-style: none;
+	padding-left: 0;
+	/* take away the padding from the list so that it right aligns */
+}
+
+a {
+	font-weight: bold;
+	text-decoration: none;
+	color: #fc55ee;
+}
+
+a:hover {
+	/* no spaces betwee a:hover please. Saying that when we move over the link change the styling */
+	color: #fc66dd;
+	text-decoration: underline;
+}
+
+.video {
+	padding: 20px;
+}
+
+.twitter-timeline {
+    position:relative;
+    padding-top: 200px;
+    float:right;
+}
